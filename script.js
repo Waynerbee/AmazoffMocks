@@ -23,7 +23,7 @@ function mouseoverEvent (){
       Sweetalert2.fire({
         animation: true,
         showConfirmButton: false,
-        timer: 5000,
+        timer: 8000,
         imageUrl: "https://i.ibb.co/b7rzY3b/Screen-Shot-2019-10-12-at-2-08-58-PM.png",
         imageAlt: 'Budget image'
       })
