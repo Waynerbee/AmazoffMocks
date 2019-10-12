@@ -15,15 +15,20 @@ function mouseoverEvent (){
     Sweetalert2.fire({
       animation: false,
       position: 'top-end',
-      type: 'warning',
-      title: phrases[random],
-      showConfirmButton: true,
+      showConfirmButton: false,
       timer: 3000,
-      imageUrl: "https://i.imgur.com/EHuPqnT.png",
-      imageWidth: 300,
-      imageHeight: 100,
+      imageUrl: "https://i.ibb.co/4my0R7M/Confirm.png",
       imageAlt: 'Budget image'
+    }).then((result) => {
+      Sweetalert2.fire({
+        animation: true,
+        showConfirmButton: false,
+        timer: 5000,
+        imageUrl: "https://i.ibb.co/b7rzY3b/Screen-Shot-2019-10-12-at-2-08-58-PM.png",
+        imageAlt: 'Budget image'
+      })
     })
+
     counter--;
     random++
     if (random > 1){
