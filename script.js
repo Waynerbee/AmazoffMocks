@@ -17,8 +17,9 @@ function mouseoverEvent (){
       position: 'top-end',
       showConfirmButton: false,
       timer: 3000,
-      imageUrl: "https://i.ibb.co/4my0R7M/Confirm.png",
-      imageAlt: 'Budget image'
+      html:
+      '<img src="https://i.ibb.co/PzshcN8/Screen-Shot-2019-10-12-at-4-53-45-PM.png">' +
+      '<img src="https://i.ibb.co/4my0R7M/Confirm.png">'
     }).then((result) => {
       Sweetalert2.fire({
         animation: true,
